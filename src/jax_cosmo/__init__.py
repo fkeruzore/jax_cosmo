@@ -1,12 +1,3 @@
-# Cosmology in JAX
-from pkg_resources import DistributionNotFound, get_distribution
-
-try:
-    __version__ = get_distribution(__name__).version
-except DistributionNotFound:
-    # package is not installed
-    pass
-
 import jax_cosmo.angular_cl as cl
 import jax_cosmo.background as background
 import jax_cosmo.bias as bias

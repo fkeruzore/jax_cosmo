@@ -1,0 +1,30 @@
+[project]
+name = "jax-cosmo"
+version = "0.1.0"
+description = "Differentiable Python Cosmology Library"
+readme = "README.md"
+authors = [
+    { name = "jax-cosmo developers" }
+]
+requires-python = ">=3.8"
+dependencies = [
+    "jax>=0.4.13",
+]
+
+[project.urls]
+Homepage = "https://github.com/DifferentiableUniverseInitiative/jax_cosmo"
+Documentation = "https://jax-cosmo.readthedocs.io"
+Repository = "https://github.com/DifferentiableUniverseInitiative/jax_cosmo"
+Issues = "https://github.com/DifferentiableUniverseInitiative/jax_cosmo/issues"
+Changelog = "https://github.com/DifferentiableUniverseInitiative/jax_cosmo/blob/master/CHANGELOG.md"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+tests = [
+    "pyccl>=3.2.1",
+    "pytest>=8.3.5",
+    "pyyaml>=6.0.2",
+]
